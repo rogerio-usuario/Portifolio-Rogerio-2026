@@ -299,12 +299,12 @@ export const CERTIFICATES: Certificate[] = [
     image: cert15,
     category: "banco-de-dados",
     summary:
-      "Curso de qualificação profissional que aborda desde a modelagem de dados relacional até a administração avançada de bancos de dados, incluindo otimização de consultas, segurança, backup e escalabilidade.",
+      "Curso de qualificação profissional que aborda desde a modelagem de dados relacional até a administração avançada de bancos de dados, incluindo otimização de consultas, segurança, backup e recuperação.",
     modules: [
       "**Bancos de Dados: Conceitos:** Introdução aos princípios básicos de bancos de dados, incluindo modelos de dados, arquitetura, normalização e importância da integridade da informação.",
       "**Bancos de Dados: SQL:** Estudo da linguagem SQL, cobrindo comandos de definição, manipulação e consulta de dados. Aprendi a criar tabelas, relacionamentos, consultas complexas e operações avançadas.",
       "**Prática de Bancos de Dados PostgreSQL:** Aplicação prática dos conceitos em um dos sistemas de gerenciamento mais robustos e utilizados no mercado. Trabalhei com criação de esquemas, índices e otimização.",
-      "**Prática de Bancos de Dados MySQL:** Exercícios práticos com o MySQL, focando em administração, configuração e uso em aplicações web. Aprendi sobre replicação, backup e recuperação.",
+      "**Prática de Bancos de Dados MySQL:** Exercícios práticos com o MySQL, focando em administração, configuração e uso em aplicações web. Aprendi sobre replicação, backup e recuperação de dados.",
       "**Administração de Bancos de Dados:** Neste segundo momento, o foco foi em planejamento e consistência. Módulo final voltado para gestão e manutenção de ambientes de dados. Incluiu segurança e performance.",
     ],
     conclusion:
@@ -319,14 +319,14 @@ export const CERTIFICATES: Certificate[] = [
     image: cert14,
     category: "lideranca",
     summary:
-      "Imersão de branding pessoal estratégico voltada para profissionais de tecnologia que desejam consolidar sua autoridade, comunicar seus diferenciais técnicos com clareza e gerenciar reputação digital.",
+      "Imersão de branding pessoal estratégico voltada para profissionais de tecnologia que desejam consolidar sua autoridade, comunicar seus diferenciais técnicos com clareza e gerenciar reputação online.",
     modules: [
       "**O novo paradigma da marca pessoal I:** Neste primeiro contato, entendi que marca pessoal não é sobre autopromoção, mas sobre reputação e valor percebido. Foi apresentado o conceito de visibilidade estratégica.",
       "**O novo paradigma da marca pessoal II:** Aprofundamos a ideia de que visibilidade não é vaidade, é estratégia. Aprendi a identificar os pilares que sustentam uma marca pessoal forte.",
       "**Encontre o seu diferencial exclusivo (seu ponto de ouro):** Este módulo foi um dos mais transformadores. Fiz exercícios práticos para identificar meu diferencial único no mercado.",
       "**Estratégia de comunicação e visibilidade I:** Aqui, mergulhei nas ferramentas de comunicação que ajudam a tornar a marca pessoal visível. Aprendi sobre storytelling e tom de voz.",
       "**Rede estratégica e relacionamentos de alto valor:** Este módulo mostrou que marca pessoal também se constrói por meio de conexões. Aprendi a cultivar relacionamentos estratégicos.",
-      "**Monetização da sua marca pessoal:** Aqui, entendi como transformar autoridade em oportunidades reais. Foram apresentadas formas de monetizar a marca pessoal por meio de produtos e serviços.",
+      "**Monetização da sua marca pessoal:** Aqui, entendi como transformar autoridade em oportunidades reais. Foram apresentadas formas de monetizar a marca pessoal por meio de produtos e serviços digitais.",
       "**Amplie e automatize a sua marca pessoal I:** Este módulo trouxe ferramentas para escalar minha presença digital. Aprendi sobre automação de conteúdo e gestão de plataformas.",
       "**Dimensione e automatize a sua marca pessoal II:** Finalizamos com estratégias para manter a marca pessoal viva e relevante ao longo do tempo.",
     ],
@@ -402,7 +402,7 @@ export const CERTIFICATES: Certificate[] = [
     image: cert10,
     category: "desenvolvimento",
     summary:
-      "Visão sistêmica do impacto de algoritmos de inteligência artificial na sociedade contemporânea, com forte ênfase em regulamentações de dados (LGPD), ética algorítmica e democratização do acesso.",
+      "Visão sistêmica do impacto de algoritmos de inteligência artificial na sociedade contemporânea, com forte ênfase em regulamentações de dados (LGPD), ética algorítmica e democratização tecnológica.",
     modules: [
       "**Contexto e relevância da IA:** Esse módulo abriu minha mente para o impacto da IA na sociedade atual. Aprendi como ela está presente em aplicativos, redes sociais, plataformas de streaming.",
       "**Cultura digital na contemporaneidade:** Aqui entendi como a tecnologia molda nossos comportamentos e relações. Foi interessante perceber como a IA influencia até mesmo a forma como nos relacionamos.",
@@ -479,7 +479,7 @@ export const CERTIFICATES: Certificate[] = [
     summary:
       "Aprofundamento na plataforma Java SE, englobando polimorfismo refinado, tratamento seguro de exceções, concorrência (Threads), persistência relacional com JDBC e manipulação de fluxos.",
     modules: [
-      "**Programação orientada a objetos avançada:** Esse módulo revisou os fundamentos da orientação a objetos, mas com uma abordagem mais profunda. Aprendi a trabalhar com herança, polimorfismo.",
+      "**Programação orientada a objetos avançada:** Esse módulo revisou os fundamentos da orientação a objetos, mas com uma abordagem mais profunda. Aprendi a trabalhar com herança, polimorfismo e interfaces.",
       "**Tratamento de exceções:** Aqui entendi como lidar com erros de forma segura e eficiente. Aprender a tratar exceções corretamente me deu mais confiança para desenvolver aplicações robustas.",
       "**Acesso a banco de dados com JDBC:** Esse foi um dos módulos mais marcantes. Aprendi a conectar aplicações Java a bancos de dados, realizar consultas e manipular registros.",
       "**Manipulação de arquivos:** Aprendi a ler e escrever arquivos externos, o que é essencial para lidar com dados fora do sistema. Esse módulo mostrou como trabalhar com diferentes formatos.",
@@ -503,7 +503,7 @@ export const CERTIFICATES: Certificate[] = [
       "**Introdução à linguagem Java:** Aprendi sobre a história da linguagem, suas principais características e onde ela é usada no mercado. Foi interessante entender como o Java se tornou tão popular.",
       "**Instalação e configuração do ambiente:** Esse módulo me ensinou a instalar o JDK e configurar o ambiente de desenvolvimento. Também aprendi a usar o terminal e os primeiros comandos.",
       "**Estrutura básica de um programa Java:** Aqui entendi como funciona a sintaxe da linguagem, como declarar variáveis, usar operadores, estruturas condicionais e de repetição.",
-      "**Orientação a objetos – introdução:** Mesmo sendo um curso básico, ele já introduziu conceitos como classes, objetos, atributos e métodos. Isso me ajudou a entender a base da programação orientada a objetos.",
+      "**Orientação a objetos – introdução:** Mesmo sendo um curso básico, ele já introduziu conceitos como classes, objetos, atributos e métodos. Isso me ajudou a entender a base da programação OOP.",
       "**Boas práticas e resolução de erros comuns:** Por fim, aprendi a identificar erros simples de sintaxe e lógica, além de aplicar boas práticas para escrever um código mais limpo.",
     ],
     conclusion:
