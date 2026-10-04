@@ -59,7 +59,11 @@ npm run lint
 npm run build
 ```
 
-Os arquivos prontos para hospedagem serão gerados na pasta `dist/`.
+Os arquivos prontos para hospedagem serão gerados na pasta `docs/`.
+
+### 6. Publicando no GitHub Pages
+
+O workflow em `.github/workflows/deploy-pages.yml` compila o projeto e publica a pasta `docs/` automaticamente a cada atualização da branch `main`. No repositório, configure **Settings > Pages > Build and deployment > Source** como **GitHub Actions**. O endereço publicado é `https://rogerio-usuario.github.io/Portifolio-Rogerio-2026/`.
 
 ---
 
