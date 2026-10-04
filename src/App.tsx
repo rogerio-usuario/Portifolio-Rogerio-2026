@@ -11,7 +11,6 @@ import {
   Briefcase,
   User,
   Mail,
-  Linkedin,
   Phone,
   Search,
   Filter,
@@ -24,6 +23,7 @@ import {
   MessageSquare,
   ShieldCheck,
   CheckCircle,
+  Check,
   HelpCircle,
   FolderCode,
   Sparkles,
@@ -258,7 +258,7 @@ export default function App() {
         currentSaved[id] = imageSrc;
         localStorage.setItem(
           "custom_cert_images",
-          JSON.stringify(currentSaved)
+          JSON.stringify(currentSaved),
         );
       } catch (e) {
         console.error("Erro ao salvar imagem:", e);
@@ -290,7 +290,7 @@ export default function App() {
           delete currentSaved[id];
           localStorage.setItem(
             "custom_cert_images",
-            JSON.stringify(currentSaved)
+            JSON.stringify(currentSaved),
           );
         }
       } catch (e) {
@@ -318,7 +318,7 @@ export default function App() {
         currentSaved[id] = imageSrc;
         localStorage.setItem(
           "custom_project_images",
-          JSON.stringify(currentSaved)
+          JSON.stringify(currentSaved),
         );
       } catch (e) {
         console.error("Erro ao salvar imagem de projeto:", e);
@@ -350,7 +350,7 @@ export default function App() {
           delete currentSaved[id];
           localStorage.setItem(
             "custom_project_images",
-            JSON.stringify(currentSaved)
+            JSON.stringify(currentSaved),
           );
         }
       } catch (e) {
@@ -425,7 +425,7 @@ export default function App() {
         const region = geoData.region_code || geoData.region || "";
 
         const weatherRes = await fetch(
-          `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`
+          `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`,
         );
         if (!weatherRes.ok) throw new Error("Falha ao obter clima");
         const weatherObj = await weatherRes.json();
@@ -441,7 +441,7 @@ export default function App() {
         console.error("Erro ao carregar clima/geolocalização: ", err);
         try {
           const weatherRes = await fetch(
-            `https://api.open-meteo.com/v1/forecast?latitude=-23.5505&longitude=-46.6333&current_weather=true`
+            `https://api.open-meteo.com/v1/forecast?latitude=-23.5505&longitude=-46.6333&current_weather=true`,
           );
           if (weatherRes.ok) {
             const weatherObj = await weatherRes.json();
@@ -567,7 +567,7 @@ export default function App() {
         // Exibe a data/hora atual e informações climáticas.
         response = [
           `>_ Data/Hora Local: ${new Date().toLocaleDateString(
-            "pt-BR"
+            "pt-BR",
           )} ${new Date().toLocaleTimeString("pt-BR")}`,
           `>_ UTC Server Time: ${new Date().toUTCString()}`,
           weatherData.city
@@ -603,7 +603,7 @@ export default function App() {
     // Build the mailto link
     const subject = encodeURIComponent(`Contato Portfólio - ${formNome}`);
     const body = encodeURIComponent(
-      `${formMensagem}\n\nContato de retorno: ${formEmail}`
+      `${formMensagem}\n\nContato de retorno: ${formEmail}`,
     );
     window.location.href = `mailto:${PERSONAL_INFO.email}?subject=${subject}&body=${body}`;
 
@@ -642,7 +642,10 @@ export default function App() {
     };
     const updatedLinks = [...customLinks, newLink];
     setCustomLinks(updatedLinks);
-    localStorage.setItem("custom_portfolio_links", JSON.stringify(updatedLinks));
+    localStorage.setItem(
+      "custom_portfolio_links",
+      JSON.stringify(updatedLinks),
+    );
     resetLinkForm();
   };
 
@@ -666,7 +669,10 @@ export default function App() {
     });
 
     setCustomLinks(updatedLinks);
-    localStorage.setItem("custom_portfolio_links", JSON.stringify(updatedLinks));
+    localStorage.setItem(
+      "custom_portfolio_links",
+      JSON.stringify(updatedLinks),
+    );
     resetLinkForm();
   };
 
@@ -879,7 +885,7 @@ export default function App() {
               </div>
               <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-center hover:border-emerald-500/30 transition-all">
                 <span className="block text-2xl font-display font-black text-white">
-                {certificates.length}
+                  {certificates.length}
                 </span>
                 <span className="text-[10px] font-mono text-emerald-500 uppercase tracking-widest font-bold">
                   Certificações
@@ -887,10 +893,10 @@ export default function App() {
               </div>
               <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-center hover:border-emerald-500/30 transition-all">
                 <span className="block text-2xl font-display font-black text-white">
-                {projects.length}
+                  {projects.length}
                 </span>
                 <span className="text-[10px] font-mono text-emerald-500 uppercase tracking-widest font-bold">
-                Projetos
+                  Projetos
                 </span>
               </div>
             </div>
@@ -979,7 +985,6 @@ export default function App() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -1044,10 +1049,10 @@ export default function App() {
                       line.startsWith("rogerio@system")
                         ? "text-emerald-400 font-bold"
                         : line.startsWith(">_")
-                        ? "text-yellow-400 font-semibold"
-                        : line.includes("Comando")
-                        ? "text-red-400"
-                        : "text-slate-300"
+                          ? "text-yellow-400 font-semibold"
+                          : line.includes("Comando")
+                            ? "text-red-400"
+                            : "text-slate-300"
                     }`}
                   >
                     {line}
@@ -1168,8 +1173,8 @@ export default function App() {
                           module.grade === "Em Andamento"
                             ? "bg-yellow-500/10 text-yellow-500 border border-yellow-500/20"
                             : isPassedHigh
-                            ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                            : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+                              ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+                              : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
                         }`}
                       >
                         {module.grade}
@@ -1254,7 +1259,7 @@ export default function App() {
             ].map((section) => {
               const Icon = section.icon;
               const sectionSkills = SKILLS.filter(
-                (s) => s.category === section.category
+                (s) => s.category === section.category,
               );
               return (
                 <div
@@ -1293,8 +1298,8 @@ export default function App() {
                                   skill.level === "Avançado"
                                     ? "100%"
                                     : skill.level === "Intermediário"
-                                    ? "75%"
-                                    : "40%",
+                                      ? "75%"
+                                      : "40%",
                               }}
                             />
                           </div>
@@ -2092,7 +2097,7 @@ export default function App() {
                     className="flex items-center justify-between p-3.5 bg-black/40 hover:bg-black border border-white/10 hover:border-emerald-500/30 rounded transition-all text-xs text-slate-300 group"
                   >
                     <span className="flex items-center gap-2 font-mono">
-                      <Linkedin className="w-4 h-4 text-emerald-400" />
+                      <Link2 className="w-4 h-4 text-emerald-400" />
                       linkedin.com/rogerio
                     </span>
                     <ArrowUpRight className="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400" />
@@ -2321,7 +2326,7 @@ export default function App() {
                                   </strong>
                                 ) : (
                                   part
-                                )
+                                ),
                               )}
                             </span>
                           </li>
@@ -2463,7 +2468,7 @@ export default function App() {
                               {val}
                             </span>
                           </div>
-                        )
+                        ),
                       )}
                     </div>
                   </div>
@@ -2582,7 +2587,7 @@ export default function App() {
                                             >
                                               {h}
                                             </th>
-                                          )
+                                          ),
                                         )}
                                       </tr>
                                     </thead>
@@ -2600,7 +2605,7 @@ export default function App() {
                                               {r[1]}
                                             </td>
                                           </tr>
-                                        )
+                                        ),
                                       )}
                                     </tbody>
                                   </table>
@@ -2648,4 +2653,4 @@ export default function App() {
       </AnimatePresence>
     </div>
   );
-} 
+}

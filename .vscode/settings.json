@@ -8,5 +8,6 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "files.associations": {
     "*.css": "tailwindcss"
-  }
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }

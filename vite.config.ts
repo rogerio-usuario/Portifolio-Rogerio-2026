@@ -2,15 +2,18 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   return {
-    base: "/PortifolioTech1/", // Esta é a linha mais importante.
+    base: command === "serve" ? "/" : "/PortifolioTech1/",
     plugins: [react()],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "."),
       },
     },
-    server: { hmr: process.env.DISABLE_HMR !== "true", watch: process.env.DISABLE_HMR === "true" ? null : {} },
+    server: {
+      hmr: process.env.DISABLE_HMR !== "true",
+      watch: process.env.DISABLE_HMR === "true" ? null : {},
+    },
   };
 });
